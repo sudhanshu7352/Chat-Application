@@ -23,7 +23,7 @@ const Chat = () => {
     socket = io(ENDPOINT, {
       withCredentials: true,
       extraHeaders: {
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': 'https://chat-application-e1me.onrender.com/'
       }
     });
     setName(name);
