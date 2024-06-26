@@ -23,7 +23,7 @@ const Chat = () => {
     socket = io(ENDPOINT, {
       withCredentials: true,
       extraHeaders: {
-        'Access-Control-Allow-Origin': 'http://localhost:3000'
+        'Access-Control-Allow-Origin': '*'
       }
     });
     setName(name);
