@@ -10,7 +10,10 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require("./users.js");
 const server = http.createServer(app);
 const io = socketio(server, {
     cors: {
-        origin: 'https://chat-application-ten-rho.vercel.app',
+        origin: [
+            'https://chat-application-ten-rho.vercel.app',
+            'https://chat-application-j4zchvh41-sudhanshu7352s-projects.vercel.app'
+          ],          
         methods: ["GET", "POST"],
         credentials: true
     }
